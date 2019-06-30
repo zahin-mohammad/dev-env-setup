@@ -3,6 +3,9 @@ cd $HOME
 sudo apt update
 sudo apt-get update
 
+echo "installing curl"
+sudo apt-get install curl
+
 echo "installing zsh"
 
 sudo apt install zsh
