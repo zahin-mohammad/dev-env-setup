@@ -30,13 +30,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 echo "\e[45m Installing zsh-syntax-highlighting \e[0m"
 # Install zsh-syntax-highlighting (not via oh-my-zsh)
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+echo "source ${(q-)PWD}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 echo "\e[45m Installing zsh-autosuggestions \e[0m"
 # Install zsh-autosuggestions (not via oh-my-zsh)
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-echo "source ${(q-)PWD}/zsh-autosuggestions/zsh-autosuggestion.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "source ${(q-)PWD}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 echo "\e[45m Installing tmux \e[0m"
 sudo apt-get install tmux
