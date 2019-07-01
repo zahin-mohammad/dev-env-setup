@@ -5,13 +5,13 @@ sudo apt-get update && sudo apt-get upgrade
 echo "\e[45m Making a ~/Dev folder \e[0m"
 mkdir ~/Dev
 
-echo "\e[45m Installing snap and snapd"
-sudp apt-get install snap && sudo apt-get install snapd
+echo "\e[45m Installing snap and snapd \e[0m"
+sudo apt-get install snap && sudo apt-get install snapd
 
-echo "\e[45m Installing git"
+echo "\e[45m Installing git \e[0m"
 sudo apt-get install git
 
-echo "\e[45m Installing pdftx"
+echo "\e[45m Installing pdftx \e[0m"
 sudo snap install pdftk
 
 echo "\e[45m Installing curl \e[0m"
