@@ -2,6 +2,9 @@ cd $HOME
 
 sudo apt-get update && sudo apt-get upgrade
 
+echo "\e[45m Making a ~/Dev folder \e[0m"
+mkdir ~/Dev
+
 echo "\e[45m Installing snap and snapd"
 sudp apt-get install snap && sudo apt-get install snapd
 
